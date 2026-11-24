@@ -35,6 +35,7 @@ CODECS = {
     "big5":"big5", "big5-hkscs":"big5hkscs", "hz":"hz", "euc_kr":"euc_kr", "euc-kr":"euc_kr", "iso-2022-kr":"iso2022_kr",
     "tis-620":"tis-620", "windows-874":"cp874", "mac-roman":"mac_roman", "mac_cyrillic":"mac_cyrillic", "cp437":"cp437", "cp850":"cp850", "cp852":"cp852", "cp866":"cp866"
 }
+
 METHODS = {"q":"Quoted-Printable / RFC 2047 Q", "base64":"Base64 / RFC 2047 B", "url":"URL / Percent Encoding", "html":"HTML Entity Encoding", "hex":"Hexadecimal", "unicode":"Unicode Escape", "json":"JSON Unicode Escape", "punycode":"Punycode"}
 for key, name in CHARSETS.items(): METHODS[f"{key}-q-chunked"] = f"{name} Q / Chunked RFC 2047"
 
